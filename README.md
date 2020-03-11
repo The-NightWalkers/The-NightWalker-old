@@ -77,6 +77,8 @@ The Nightwalker app is a security app that enables users to call 911 emergency l
 
 ## Wireframes
 [The NightWalker App WireFrame]
+
+
 <img src="nightWalker.jpg" width=600>
 
 ### [BONUS] Digital Wireframes & Mockups
