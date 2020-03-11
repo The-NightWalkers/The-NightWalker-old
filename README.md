@@ -76,8 +76,8 @@ The Nightwalker app is a security app that enables users to call 911 emergency l
 * Social -> Jumps to chat
 
 ## Wireframes
-[Add picture of your hand sketched wireframes in this section]
-<img src="YOUR_WIREFRAME_IMAGE_URL" width=600>
+[The NightWalker App WireFrame]
+<img src="nightWalker.jpg" width=600>
 
 ### [BONUS] Digital Wireframes & Mockups
 
