@@ -86,10 +86,48 @@ The Nightwalker app is a security app that enables users to call 911 emergency l
 ### [BONUS] Interactive Prototype
 
 ## Schema 
-[This section will be completed in Unit 9]
+
 ### Models
-[Add table of models]
+## Model: Users
+| **Property Name** | **Type**            | **All tasks*          |
+|:----------------- |:------------------- |:--------------------- |
+| username          | pointer to username | user's username       |
+| profile avatar    | image               | user's profile avatar |
+| password          | string              | user's password       |
+| Location          | pointer to Location | user's location       |
+
+## Model: Location 
+| **Property Name**| **Type**            | **All tasks*
+| :----------------| :-------------------| :---------------------|
+| Latitude         |    string           | number and direction of latitude|
+| Longitude        |    string           | number and direction of longitude |
+
+## Model: Message
+| **Property Name**| **Type**            | **All tasks*          |
+| :----------------| :-------------------| :---------------------|
+|objectId          |  Pointer             | unique id for the current user                       |
+| author           | Pointer              | author of the message                       |
+| createdAt        | Date/Time            | Date/time message was sent                       |
+## FriendsList
+| **Property Name** | **Type**       | **All tasks* |
+|:----------------- |:--------       |:------------ |
+| priority          |number          |The order of priority of the contacted people            |
+| phone number      |number          |The phone numbers of all contacts              |
+| relationship      |string          |specifies relationship to highly ranked contacts              |
+
 ### Networking
+
+| **Screen**      | HTTP VERB   | **Network requests**                   |
+|:--------------- | ---         |:-------------------------------------- |
+| LoginActivity   |POST         | post user's username and password            |
+| Home            |CREATE       | making a call to police               |
+| Location        |READ         | reading the user's location                   |
+| List of Friends |GET          | getting contacts                           |
+| Contact         |CREATE       | CREATE a new message                   |
+| Invite          |READ and GET | reads and gets user's contact and select |
+
+
+
 - [Add list of network requests by screen ]
 - [Create basic snippets for each Parse network request]
 - [OPTIONAL: List endpoints if using existing API such as Yelp]
