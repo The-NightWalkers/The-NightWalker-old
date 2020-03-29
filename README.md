@@ -120,11 +120,11 @@ The Nightwalker app is a security app that enables users to call 911 emergency l
 | **Screen**      | HTTP VERB   | **Network requests**                   |
 |:--------------- | ---         |:-------------------------------------- |
 | LoginActivity   |POST         | post user's username and password            |
-| Home            |CREATE       | making a call to police               |
-| Location        |READ         | reading the user's location                   |
+| Home            |POST         | making a call to police               |
+| Location        |GET          | reading the user's location                   |
 | List of Friends |GET          | getting contacts                           |
-| Contact         |CREATE       | CREATE a new message                   |
-| Invite          |READ and GET | reads and gets user's contact and select |
+| Contact         |POST         | CREATE a new message                   |
+| Invite          |GET          | reads and gets user's contact and select |
 
 
 
