@@ -151,7 +151,6 @@ The Nightwalker app is a security app that enables users to call 911 emergency l
             System.out.println(response.body().string());
         }
 
-private void sendGet() throws Exception {
 
     public static void makeRequest(Context context) {
     RequestQueue queue = Contacts.newRequestQueue(context);
@@ -160,8 +159,7 @@ private void sendGet() throws Exception {
         @Override
         public void onResponse(String response) {
             if (response!=null){
-                Log.d("Response", response);
-                Log.d("Response", Integer.toString(response.length()));
+                Log.d("Get contacts received")
             }
         }
     };
