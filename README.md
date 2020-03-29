@@ -131,8 +131,7 @@ The Nightwalker app is a security app that enables users to call 911 emergency l
 - [Add list of network requests by screen ]
 - [Create basic snippets for each Parse network request]
 {
-Post request:
- // form parameters
+
         RequestBody formBody = new FormBody.Builder()
                 .add("username", "abc")
                 .add("password", "123") 
