@@ -154,15 +154,17 @@ The Nightwalker app is a security app that enables users to call 911 emergency l
 
 ### GET REQUEST
 
+
+
  public static void makeRequest(Context context) {
-    RequestQueue queue = Volley.newRequestQueue(context);
+    RequestQueue queue = Contacts.newRequestQueue(context);
 
     Response.Listener responseListener = new Response.Listener<String>() {
         @Override
-        public void onResponse(String response) {
+        public void onResponse(String contact) {
             if (response!=null){
-                Log.d("Response", response);
-                Log.d("Response", Integer.toString(response.length()));
+                Log.d("Contact", contact);
+                
             }
         }
     };
