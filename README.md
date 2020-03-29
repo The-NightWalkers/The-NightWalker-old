@@ -154,7 +154,7 @@ The Nightwalker app is a security app that enables users to call 911 emergency l
 
 
 
-    public static void makeRequest(Context context) {
+   {
     RequestQueue queue = Contacts.newRequestQueue(context);
 
     Response.Listener responseListener = new Response.Listener<String>() {
@@ -164,5 +164,5 @@ The Nightwalker app is a security app that enables users to call 911 emergency l
                 Log.d("Get contacts received")
             }
         }
-    };
+    }
 
