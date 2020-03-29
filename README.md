@@ -151,8 +151,6 @@ The Nightwalker app is a security app that enables users to call 911 emergency l
             System.out.println(response.body().string());
         }
 
-    }
-    }
 - [OPTIONAL: List endpoints if using existing API such as Yelp]
 
 
