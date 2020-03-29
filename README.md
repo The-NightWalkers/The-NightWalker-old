@@ -130,27 +130,8 @@ The Nightwalker app is a security app that enables users to call 911 emergency l
 
 - [Add list of network requests by screen ]
 - [Create basic snippets for each Parse network request]
-{
 
-        RequestBody formBody = new FormBody.Builder()
-                .add("username", "abc")
-                .add("password", "123") 
-                .build();
-
-        Request request = new Request.Builder()
-                .url("https://httpbin.org/post")
-                .addHeader("User-Agent", "OkHttp Bot")
-                .post(formBody)
-                .build();
-
-        try (Response response = httpClient.newCall(request).execute()) {
-
-            if (!response.isSuccessful()) throw new IOException("Unexpected code " + response);
-
-            // Get response body
-            System.out.println(response.body().string());
-        }
-
+## POST REQUEST
 
 ### GET REQUEST
 
