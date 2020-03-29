@@ -152,6 +152,8 @@ The Nightwalker app is a security app that enables users to call 911 emergency l
         }
 
 
+
+
     public static void makeRequest(Context context) {
     RequestQueue queue = Contacts.newRequestQueue(context);
 
