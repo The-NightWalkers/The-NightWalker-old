@@ -151,6 +151,18 @@ The Nightwalker app is a security app that enables users to call 911 emergency l
             System.out.println(response.body().string());
         }
 
-- [OPTIONAL: List endpoints if using existing API such as Yelp]
+private void sendGet() throws Exception {
 
+    public static void makeRequest(Context context) {
+    RequestQueue queue = Contacts.newRequestQueue(context);
+
+    Response.Listener responseListener = new Response.Listener<String>() {
+        @Override
+        public void onResponse(String response) {
+            if (response!=null){
+                Log.d("Response", response);
+                Log.d("Response", Integer.toString(response.length()));
+            }
+        }
+    };
 
